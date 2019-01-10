@@ -10,4 +10,9 @@ end
    dice = Dice.new
    expect(dice.roll).to be_between(1, 6)
  end
+
+ it "rolls multiple times" do
+   dice = Dice.new
+   expect(dice.roll).to be eq(number_of_rolls)
+ end 
 end
